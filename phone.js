@@ -73,8 +73,8 @@ const showPhoneDetail = (phone)=>{
     <p><span class="text-lg">${phone?.mainFeatures?.displaySize}</span></p>
     <p><span class="text-lg">${phone?.mainFeatures?.memory}</span></p>
     <p><span class="text-lg">${phone?.mainFeatures?.sensors}</span></p>
-    <p><span class="text-lg">${phone?.others?.GPS}</span></p>
-    <p><span class="text-lg">${phone?.others?.WLAN}</span></p>
+    <p><span class="text-lg">${phone?.others?.GPS || 'No GPS available'}</span></p>
+    <p><span class="text-lg">${phone?.others?.WLAN || 'No WLAN'}</span></p>
     <p><span class="text-lg">${phone?.releaseDate}</span></p>
     `
 
